@@ -16,11 +16,11 @@
 /* Standard Recursion */
 
 pow(Base, Exponent, Result) :-
-	Exponent >= 0,
+    Exponent >= 0,
     pow_impl(Base, Exponent, Result).
 
 pow(Base, Exponent, Result) :-
-	(Exponent < 0, Base \= 0),
+    (Exponent < 0, Base \= 0),
     NewBase is 1 / Base,
     NewExponent is -1 * Exponent,
     pow_impl(NewBase, NewExponent, Result).
