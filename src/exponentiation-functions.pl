@@ -52,3 +52,17 @@ tr_pow_impl(Base, Exponent, Accumulator, Result) :-
     NewExponent is Exponent - 1,
     NewAccumulator is Base * Accumulator,
     tr_pow_impl(Base, NewExponent, NewAccumulator, Result).
+
+/* Interaction with the user to get the base and exponent */
+
+main :-
+    write('Enter the base: '),
+    read(Base),
+    write('Enter the exponent: '),
+    read(Exponent),
+    
+    pow(Base, Exponent, Result_pow),
+    write('Result of pow: '), write(Result_pow), nl,
+    
+    tr_pow(Base, Exponent, Result_tr_pow),
+    write('Result of tr_pow: '), write(Result_tr_pow), nl.
