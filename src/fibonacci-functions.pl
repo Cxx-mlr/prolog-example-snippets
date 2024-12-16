@@ -5,7 +5,7 @@
  * - The `fibonacci` function uses standard recursion.
  * - The `tr_fibonacci` function uses tail recursion, optimized to avoid stack 
  *   overflow when calculating Fibonacci numbers for large indices.
- * /
+ */
 
 /* Standard Recursion */
 
