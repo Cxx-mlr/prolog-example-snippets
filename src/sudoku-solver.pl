@@ -23,6 +23,6 @@ solutions(
     unique(R14, R24, R34, R44),
     
     unique(R11, R12, R21, R22),
-	unique(R13, R14, R23, R24),
-	unique(R31, R32, R41, R42),
-	unique(R33, R34, R43, R44).
+    unique(R13, R14, R23, R24),
+    unique(R31, R32, R41, R42),
+    unique(R33, R34, R43, R44).
